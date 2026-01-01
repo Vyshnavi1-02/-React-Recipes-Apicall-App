@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f4f6f8;
+}
+
+.app {
+  max-width: 1200px;
+  margin: auto;
+  padding: 50px;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header p {
+  color: #666;
+}
+
+/* Cuisine Selector */
+.cuisine-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 35px;
+  flex-wrap: wrap;
+}
+
+.cuisine-card {
+  width: 160px;
+  border: none;
+  background: white;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  transition: transform 0.2s, border 0.2s;
+}
+
+.cuisine-card img {
+  width: 100%;
+  height: 110px;
+  object-fit: cover;
+}
+
+.cuisine-card span {
+  display: block;
+  padding: 8px;
+  font-weight: 600;
+}
+
+.cuisine-card:hover {
+  transform: translateY(-4px);
+}
+
+.cuisine-card.active {
+  border: 3px solid #ff7043;
+}
+
+/* Recipe Grid */
+.recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 22px;
+}
+
+/* Recipe Card */
+.recipe-card {
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.recipe-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.recipe-info {
+  padding: 15px;
+}
+
+.recipe-info h3 {
+  margin: 0 0 6px;
+}
+
+.recipe-info .cuisine {
+  color: #ff7043;
+  font-weight: 600;
+}
